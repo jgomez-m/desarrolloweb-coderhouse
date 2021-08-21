@@ -1,7 +1,7 @@
 {
-  "name": "entrega-clase-11",
+  "name": "desarrolloweb-coderhouse",
   "version": "1.0.0",
-  "description": "Entrega 3 Proyecto",
+  "description": "Tienda de Mascotas - Animania",
   "main": "index.html",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
