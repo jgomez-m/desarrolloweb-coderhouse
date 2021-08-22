@@ -131,7 +131,7 @@
 .formulario {
   color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   max-width: 1200px;
   margin: 10px; }
 
@@ -142,6 +142,11 @@
 .formulario label {
   display: block;
   margin-bottom: 5px; }
+
+.titulo {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: smaller; }
 
 /* Media queries */
 @media screen and (max-width: 576px) {
