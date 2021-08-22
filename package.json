@@ -1,19 +1,18 @@
 {
-  "name": "desarrolloweb-coderhouse",
+  "name": "tienda-mascotas-animania",
   "version": "1.0.0",
   "description": "Tienda de Mascotas - Animania",
   "main": "index.html",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm     run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\"",
+    "build-css-boot": "node-sass --include-path scss bootstrap/bootstrap.scss css/bootstrap.css",
+    "watch-css-boot": "nodemon -e scss -x \"npm run build-css-boot\""
   },
   "author": "Julian Gomez",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
-  },
-  "dependencies": {
-    "bootstrap": "^5.1.0"
   }
 }
