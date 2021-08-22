@@ -6,7 +6,7 @@
   "scripts": {
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm     run build-css\"",
-    "build-css-boot": "node-sass --include-path scss bootstrap/bootstrap.scss css/bootstrap.css",
+    "build-css-boot": "node-sass --include-path scss bootstrap/scss/bootstrap.scss css/bootstrap.css",
     "watch-css-boot": "nodemon -e scss -x \"npm run build-css-boot\""
   },
   "author": "Julian Gomez",
