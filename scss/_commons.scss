@@ -31,6 +31,8 @@
 
 .anuncios{
 	margin: $margin;
+	display: flex;
+	flex-direction: column;
 }
 
 .anuncios__titulo{
@@ -39,6 +41,8 @@
 
 .anuncios__parrafo{
 	color: $grey;
+	display: flex;
+	flex-direction: column;
 }
 
 .homePage {
@@ -72,10 +76,10 @@
 	display: grid;
 	grid-template-areas:
 	"header header header"
-	". mainForm mainForm"
+	". mainForm ."
 	"footer footer footer";
-	grid-template-columns: 1fr 2fr 2fr;
-	grid-template-rows: 0.4fr 2fr 0.3fr;
+	grid-template-columns: 2fr 2fr 2fr;
+	grid-template-rows: 0.4fr 2fr 100px;
 	grid-column-gap: 10px;
 	grid-row-gap: 5px;
 	justify-content: center;
@@ -88,7 +92,7 @@
 	"main main main"
 	"footer footer footer";
 	grid-template-columns: 1fr 2fr 2fr;
-	grid-template-rows: 0.4fr 2fr 0.5fr;
+	grid-template-rows: 0.4fr 2fr 100px;
 	grid-column-gap: 10px;
 	grid-row-gap: 5px;
 	justify-content: center;
@@ -109,6 +113,8 @@
 	grid-area: banner;
 	margin-top: 10px; 
 	border-style: none;
+	height: 500px;
+	overflow: hidden;
 }
 
 .main{
