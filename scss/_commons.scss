@@ -1,15 +1,15 @@
 
-.main__titulo{
+.mainTitulo{
 	color: $bg-warning;
 	text-align: $text-center;
 	padding-bottom: $pb-15;
 }
 
-.main__parrafo1, .main__parrafo2{
+.mainParrafo1, .mainParrafo2{
 	padding: $padding;
 }
 
-.main__parrafo3{
+.mainParrafo3{
 	padding: $padding;
 	font-size: smaller;
 	text-align: $text-center;
@@ -35,11 +35,11 @@
 	flex-direction: column;
 }
 
-.anuncios__titulo{
+.anunciosTitulo{
 	font-weight: $font-weight;
 }
 
-.anuncios__parrafo{
+.anunciosParrafo{
 	color: $grey;
 	display: flex;
 	flex-direction: column;
@@ -101,25 +101,22 @@
 .header {
 	grid-area: header;
 	padding-bottom: 0px;
-	border-style: none;
-	background-color: snow;
+	background-color: rgb(255, 255, 255);
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	border-style: none;
+	margin-top: 10px;
+	height: 155px;
 }
 
 .banner{
 	grid-area: banner;
 	margin-top: 10px; 
-	border-style: none;
 	height: 500px;
 	overflow: hidden;
 }
 
 .main{
 	grid-area: main;
-	border-style: none;
 }
 
 .mainForm{
@@ -132,7 +129,6 @@
 
 .aside {
 	grid-area: aside;
-	border-style: none;
 }
 
 .filter {
@@ -146,6 +142,25 @@
 	grid-area: footer;
 	border-style: solid;
 	background-color: lightgrey;
+	display: grid;
+	grid-template-areas: "redes datos .";
+	grid-template-columns: 3fr 3fr 3fr;
+}
+
+.footerRedes{
+	grid-area: redes;
+	display: flex;
+	flex-direction: row;
+}
+
+.footerDatos{
+	grid-area: datos;
+	font-family: Arial;
+	font-style: italic;
+	font-size: 0.8rem;
+	text-align: center;
+	line-height: 4px;
+	padding-top: 20px;
 }
 
 .header img{
@@ -193,6 +208,11 @@
 	font-size: smaller;
 }
 
+.nav-item a:hover{
+	background-color: #5f9fff;
+	color: white;
+}
+
 
 /* Media queries */
 // TODO: Faltan crear mediaqueries para las demas paginas y breakpoints 
@@ -212,6 +232,18 @@
 		max-width: auto;
 	}
 
+	.aboutPage {
+		display: grid;
+		grid-template-areas:
+		"header"
+		"main"
+		"footer";
+		grid-template-columns: 12fr;
+		grid-template-rows: 0.4fr 2fr 200px;
+		grid-row-gap: 10px;
+		justify-content: center;
+	}
+
 	.header {
 		grid-area: header;
 		display: flex;
@@ -224,6 +256,10 @@
 
 	.aside {
 		grid-area: aside;
-		border-style: none;
+	}
+
+	.footer{
+		display: flex;
+		flex-direction: column;
 	}
 }
