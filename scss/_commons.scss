@@ -52,9 +52,7 @@
 	"banner banner banner"
 	"main main aside"
 	"footer footer footer";
-	grid-template-columns: 2fr 2fr 1fr;
-	grid-template-rows: 0.4fr 1fr 1fr 100px;
-	grid-column-gap: 5px;
+	grid-template-columns: 3fr 3fr 1fr;
 	grid-row-gap: 5px;
 	justify-content: center;
 }
@@ -66,9 +64,21 @@
 	"filter main main"
 	"footer footer footer";
 	grid-template-columns: 1fr 2fr 2fr;
-	grid-template-rows: 0.4fr 2fr 100px;
 	grid-column-gap: 10px;
 	grid-row-gap: 5px;
+	justify-content: center;
+}
+
+.serviciosPage {
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"filter main main"
+	"footer footer footer";
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-rows: 0.4fr 2fr 100px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
 	justify-content: center;
 }
 
@@ -79,7 +89,6 @@
 	". mainForm ."
 	"footer footer footer";
 	grid-template-columns: 2fr 2fr 2fr;
-	grid-template-rows: 0.4fr 2fr 100px;
 	grid-column-gap: 10px;
 	grid-row-gap: 5px;
 	justify-content: center;
@@ -92,7 +101,6 @@
 	"main main main"
 	"footer footer footer";
 	grid-template-columns: 1fr 2fr 2fr;
-	grid-template-rows: 0.4fr 2fr 100px;
 	grid-column-gap: 10px;
 	grid-row-gap: 5px;
 	justify-content: center;
@@ -101,22 +109,22 @@
 .header {
 	grid-area: header;
 	padding-bottom: 0px;
-	background-color: rgb(255, 255, 255);
+	background-color: $beige;
 	display: flex;
 	flex-direction: row;
 	margin-top: 10px;
-	height: 155px;
+	height: 150px;
 }
 
 .banner{
 	grid-area: banner;
-	margin-top: 10px; 
-	height: 500px;
+	height: 400px;
 	overflow: hidden;
 }
 
 .main{
 	grid-area: main;
+	height: auto;
 }
 
 .mainForm{
@@ -129,13 +137,13 @@
 
 .aside {
 	grid-area: aside;
+	height: auto;
 }
 
 .filter {
 	grid-area: filter;
 	display: flex;
 	flex-direction: column;
-
 }
 
 .footer{
@@ -145,6 +153,7 @@
 	display: grid;
 	grid-template-areas: "redes datos .";
 	grid-template-columns: 3fr 3fr 3fr;
+	height: 100px;
 }
 
 .footerRedes{
@@ -211,6 +220,13 @@
 .nav-item a:hover{
 	background-color: #5f9fff;
 	color: white;
+	background-size: 100% 2px;
+}
+
+.img-400 {
+	width: 400px;
+	margin: auto;
+	display: block;
 }
 
 
@@ -229,7 +245,7 @@
 		"footer";
 		grid-template-columns: 12fr;
 		grid-template-rows: 0.3fr 0.5fr 1fr 0.5fr 0.5fr;
-		max-width: auto;
+		justify-content: center;
 	}
 
 	.aboutPage {
