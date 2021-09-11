@@ -180,8 +180,15 @@
 
 .img-400 {
   width: 400px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: block; }
+
+.img-200 {
+  width: 200px;
+  margin: auto; }
 
 /* Media queries */
 @media screen and (max-width: 576px) {

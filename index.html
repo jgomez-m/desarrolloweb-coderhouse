@@ -10,13 +10,22 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
+	<!-- wow js -->
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </head>
 
 <body>
 	<div class="homePage">
 		<header class="header">
-				<a href="index.html"><img src="media/logo.jpg" alt="Logo tienda" /></a>
-				<nav>
+				<a href="index.html">
+					<img src="media/logo.jpg" alt="Logo tienda" class="wow slideInLeft" data-wow-delay="0" data-wow-duration="1s"/>
+				</a>
+				<nav class="wow slideInDown">
 					<ul class="nav nav-pills">
 						<li class="nav-item">
 							<a class="nav-link active" href="index.html">Inicio</a>
@@ -74,8 +83,11 @@
 					Contamos con la más amplia variedad en alimento para tu mascota, accesorios, farmacia, juguetes y servicios experimentados como veterinaria y peluquería, mascotas para adopción y mucho más.
 					Compra online las mejores ofertas desde la comodidad de tu casa.
 			</article>
-			<article>
-				<img class="img-400" src="media/cocker-spaniel.jpg" alt="imagen main1" />
+			<article class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
+				<img class="img-400" src="media/cocker-spaniel.jpg" alt="imagen-inicio1" />
+			</article>
+			<article class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.3s">
+				<img class="img-400" src="media/gato-portada.jpg" alt="imagen-inicio2" />
 			</article>
 		</section>
 
